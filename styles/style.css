@@ -8,7 +8,8 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -16,6 +17,8 @@ main {
     width: 870PX;
     /* height: 679PX; */
     padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
 }
 
 hr {
@@ -94,4 +97,35 @@ top blogs styles
 .blog-author {
     color: #9F9F9F;
     font-size: 16px;
+}
+
+/*----------------------
+    Lates Course
+----------------------*/
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cours .cours-bannar img {
+    width: 224px;
+    height: 104px;
+}
+
+.cours-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.fellend {
+    color: #FFC014;
+}
+
+.fa-star.emty {
+    color: #AEAEAE;
 }
