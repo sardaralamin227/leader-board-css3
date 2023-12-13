@@ -102,9 +102,11 @@ top blogs styles
 /*----------------------
     Lates Course
 ----------------------*/
-.courses {
+.courses-t {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+
 }
 
 .cours .cours-bannar img {
@@ -112,7 +114,7 @@ top blogs styles
     height: 104px;
 }
 
-.cours-info {
+.course-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,4 +130,49 @@ top blogs styles
 
 .fa-star.emty {
     color: #AEAEAE;
+}
+
+.cours-duration {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 0px 5px;
+    background-color: #FFE4E8;
+    color: #FF4A60;
+}
+
+/* media  */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses-t {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+}
+
+/* tablet divice */
+@media only screen and (min-width:589px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses-t {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
 }
